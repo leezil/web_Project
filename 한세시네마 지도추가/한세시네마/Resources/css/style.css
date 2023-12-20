@@ -1,0 +1,72 @@
+#carouselExampleFade {
+    max-width: 600px; /* 원하는 크기로 조절 */
+    margin: auto; /* 중앙 정렬을 위해 */
+}
+
+.carousel-item img {
+    width: 100%; /* 이미지가 카루셀 너비에 맞게 조절되도록 */
+    height: auto; /* 가로세로 비율 유지를 위해 */
+    max-width: 600px; /* 최대 너비 설정 */
+    max-height: 340px; /* 최대 높이 설정 */
+}
+
+
+
+#carouselExample1 {
+    max-width: 150px; 
+    margin: auto;
+}
+
+#carouselExample2 {
+    max-width: 150px;
+    margin: auto; 
+}
+
+#carouselExample3 {
+    max-width: 150px; 
+    margin: auto; 
+}
+
+.carousel-item2 img {
+    width: 100%; 
+    height: auto;
+    max-width: 150px; 
+    max-height: 200px; 
+}
+
+
+
+
+
+.carousel-fade .carousel-item {
+    transition: opacity 0.5s ease, filter 1.5s ease; /* 투명도 및 선명도 조절 */
+    filter: blur(8px); /* 초기에 흐림 효과 적용 */
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+    filter: blur(0); /* 활성 슬라이드는 선명하게 보이도록 */
+}
+
+.carousel-fade .carousel-item:not(.active) {
+    opacity: 0;
+    filter: blur(8px); /* 비활성 슬라이드는 흐려지도록 */
+}
+
+/*                          */
+
+/* body {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin: 0;
+  }
+  
+  .container {
+    width: 100vw;
+    flex-shrink: 0;
+  }
+  
+  .carousel {
+    width: 100%;
+  } */

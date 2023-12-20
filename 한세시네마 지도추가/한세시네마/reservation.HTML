@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>한세 시네마</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <div style="margin: auto; width: 60%; background-color: lightgray;">
+    <div class="container-fluid">
+        <header class="d-flex justify-content-between py-3 mb-4 border-bottom">
+            <a href="./test.HTML" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="10" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4">한세 시네마</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" id="loginBtn" class="nav-link" aria-current="page" onclick="handleButtonClick('1', this)">로그인</a></li>
+                <li class="nav-item"><a href="#" id="registerBtn" class="nav-link" onclick="handleButtonClick('2', this)">회원가입</a></li>
+                <li class="nav-item"><a href="#" id="reserveBtn" class="nav-link" onclick="handleButtonClick('3', this)">영화예매</a></li>
+            </ul>
+        </header>
+    </div>
+  </div>
+
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0"
+    style="margin: auto; width: 60%;">
+      
+      <h4 id="scrollspyHeading1" style="text-align: center;">현재 상영작</h4>
+      <p>    <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <!-- 첫 번째 이미지 -->
+            <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+
+                <div class="carousel-item2 active">
+                  <img src="./Resources/img/명량.jpg" class="d-block w-100" alt="First Slide" onclick="handleButtonClick('4', this)" style="cursor: pointer;">
+                  <div style="text-align: center;">
+                    <input type="button" style="border: none;" onclick="handleButtonClick('4', this)" style="cursor: pointer;" value="명량">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      
+          <div class="col">
+            <!-- 두 번째 이미지 -->
+            <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+
+                <div class="carousel-item2">
+                  <img src="./Resources/img/겨울왕국.png" class="d-block w-100" alt="Second Slide" onclick="handleButtonClick('5', this)" style="cursor: pointer;">
+                  <div style="text-align: center;">
+                    <input type="button" style="border: none;" onclick="handleButtonClick('5', this)" style="cursor: pointer;" value="겨울왕국">
+                  </div>
+                </div>
+ 
+              </div>
+            </div>
+          </div>
+      
+          <div class="col">
+            <!-- 세 번째 이미지 -->
+            <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+
+                <div class="carousel-item2">
+                  <img src="./Resources/img/설국열차.jpg" class="d-block w-100" alt="Third Slide" onclick="handleButtonClick('6', this)" style="cursor: pointer;">
+                  <div style="text-align: center;">
+                    <input type="button" style="border: none;" onclick="handleButtonClick('6', this)" style="cursor: pointer;" value="설국열차">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </p>
+
+    </div>
+
+    <script src="./Resources/js/Main_Event.js"></script>
+    
+
+    <footer style="height: 50px; background-color: lightgray; margin: auto; width: 60%; margin-top: 5%;">
+    </footer>
+        
+    </body>

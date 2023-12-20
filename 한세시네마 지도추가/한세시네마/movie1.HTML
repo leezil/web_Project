@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>한세 시네마</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<form action="./bookInfo.HTML">
+
+<body style="background-color: #BDBDBD;">
+  <div style="margin: auto; width: 60%; background-color: lightgray;">
+    <div class="container-fluid">
+        <header class="d-flex justify-content-between py-3 mb-4 border-bottom">
+            <a href="./test.HTML" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="10" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4">한세 시네마</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" id="loginBtn" class="nav-link" aria-current="page" onclick="handleButtonClick('1', this)">로그인</a></li>
+                <li class="nav-item"><a href="#" id="registerBtn" class="nav-link" onclick="handleButtonClick('2', this)">회원가입</a></li>
+                <li class="nav-item"><a href="#" id="reserveBtn" class="nav-link" onclick="handleButtonClick('3', this)">영화예매</a></li>
+            </ul>
+        </header>
+    </div>
+  </div>
+
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0"
+    style="margin: auto; width: 60%;">
+      
+      <h4 id="scrollspyHeading1" style="text-align: center;">영화 예매</h4>
+      <p>    <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <!-- 첫 번째 이미지 -->
+            <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+
+                <div class="carousel-item2 active" style="text-align: center;">
+                  <img src="./Resources/img/명량.jpg" class="d-block w-100" alt="First Slide" onclick="handleButtonClick('4', this)" style="cursor: pointer;">
+                  <a style="font-size: x-large;">영화명 : 명량</a>
+                  <input type="hidden" name="serialNo" value="1">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 8%;">
+
+          날짜 선택
+          <br>
+
+            <input type="date"
+                   name="date"
+                   max="2024-12-31"
+                   min="2023-01-01"
+                   value="2023-12-21">
+          </label>
+
+      </div>
+
+        <div style="text-align: center; margin-top: 8%;">
+            시간 선택
+
+            <table border="1" style="text-align: center; margin-top: 3%;">
+                <th>04:30-06:20</th>
+                <th>08:40-10:30</th>
+                <th>12:10-14:00</th>
+                <th>16:20-18:10</th>
+                <th>20:50-22:40</th>
+                <th>00:40-02:30</th>
+                <tr>
+                <td><input type="radio" name="time" value="04:30-06:20"></input></td>
+                <td><input type="radio" name="time" value="08:40-10:30"></input></td>
+                <td><input type="radio" name="time" value="12:10-14:00"></input></td>
+                <td><input type="radio" name="time" value="16:20-18:10"></input></td>
+                <td><input type="radio" name="time" value="20:50-22:40"></input></td>
+                <td><input type="radio" name="time" value="00:40-02:30"></input></td>
+                </tr>
+
+
+                </table>
+                <link rel="stylesheet" href="./Resources/css/table.css">
+
+        </div>
+
+        <div style="text-align: center; margin-top: 8%;">
+            좌석 선택
+        </div>
+            <div style="text-align: center; margin-top: 5%;">
+            <table>
+
+                <tr>
+                screen
+                </tr>
+
+            </table>
+            </div>
+
+            <table border="1" style="text-align: center; margin-top: 3%;">
+                <tr>
+                <th>A1<input type="checkbox" name="seat" value="A1"></th>
+                <th>A2<input type="checkbox" name="seat" value="A2"></th>
+                <th>A3<input type="checkbox" name="seat" value="A3"></th>
+                <th>A4<input type="checkbox" name="seat" value="A4"></th>
+                <th>A5<input type="checkbox" name="seat" value="A5"></th>
+                </tr>
+                <tr>
+                <th>B1<input type="checkbox" name="seat" value="B1"></th>
+                <th>B2<input type="checkbox" name="seat" value="B2"></th>
+                <th>B3<input type="checkbox" name="seat" value="B3"></th>
+                <th>B4<input type="checkbox" name="seat" value="B4"></th>
+                <th>B5<input type="checkbox" name="seat" value="B5"></th>
+                </tr>
+                <tr>
+                <th>C1<input type="checkbox" name="seat" value="C1"></th>
+                <th>C2<input type="checkbox" name="seat" value="C2"></th>
+                <th>C3<input type="checkbox" name="seat" value="C3"></th>
+                <th>C4<input type="checkbox" name="seat" value="C4"></th>
+                <th>C5<input type="checkbox" name="seat" value="C5"></th>
+                </tr>
+                <tr>
+                <th>D1<input type="checkbox" name="seat" value="D1"></th>
+                <th>D2<input type="checkbox" name="seat" value="D2"></th>
+                <th>D3<input type="checkbox" name="seat" value="D3"></th>
+                <th>D4<input type="checkbox" name="seat" value="D4"></th>
+                <th>D5<input type="checkbox" name="seat" value="D5"></th>
+                </tr>
+            
+                </table>
+                <link rel="stylesheet" href="./Resources/css/table.css">
+
+        </div>
+
+
+      </div>
+    </p>
+
+    </div>
+
+    <div style="margin: auto; width: 60%; text-align: center; margin-top: 5%;">
+
+        <input type="submit" value="예매하기"
+        
+        style= "width: 200px;
+        height: 50px;
+        border: 0;
+        outline: none;
+        border-radius: 0px;
+        color: white;
+        background: black;" 
+        
+        onclick="alertMSG()">
+
+    </div>
+
+    <script src="./Resources/js/Main_Event.js"></script>
+    
+
+    <footer style="height: 50px; background-color: lightgray; margin: auto; width: 60%; margin-top: 5%;">
+    </footer>
+        
+    </body>
+
+</form>
+
+</html>
