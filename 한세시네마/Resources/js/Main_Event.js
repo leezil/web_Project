@@ -17,23 +17,23 @@ function handleButtonClick(buttonName, buttonElement) {
 if(getLoginStatus() == false){
 
   if (buttonName == 1) {
-  openPage('./signin.HTML');
+  openPage('./signin.html');
   }else if (buttonName != 2) {
  alert('로그인이 필요한 작업입니다.');
- openPage('./signin.HTML');
+ openPage('./signin.html');
 } 
 }else {
 
     if (buttonName == 1) 
      logOutStatus();
    else if (buttonName == 3)
-     openPage('./reservation.HTML');
+     openPage('./reservation.html');
    else if (buttonName == 4)
-     openPage('./movie1.HTML');
+     openPage('./movie1.html');
    else if (buttonName == 5)
-     openPage('./movie2.HTML');
+     openPage('./movie2.html');
    else if (buttonName == 6)
-     openPage('./movie3.HTML');
+     openPage('./movie3.html');
 
  }}
 
@@ -49,7 +49,7 @@ function handleLogin() {
       if (email === 'admin@naver.com' && password === 'admin') {
         alert('관리자님 환영합니다!');
         saveLoginStatus(true);
-        location.href="./test2.HTML";
+        location.href="./test2.html";
        
       } else {
         alert('아이디 또는 비밀번호가 잘못되었습니다.');
@@ -98,7 +98,17 @@ function writeSession(){
 
 function alertMSG() {
 
+  alert("작동 잘됨");
+
+  var seat = document.getElementsByName('seat');
+        if(seat.value == "") {
+            alert("좌석을 선택해 주세요.");
+            return false;
+        }else {
+
  alert("예매가 완료되었습니다.");
+ 
+}
 
 }
 
@@ -106,8 +116,10 @@ function moojyogunLogOut() {
 
   saveLoginStatus(false);
   alert("로그아웃 되었습니다.");
-  location.href="./test.HTML";
+  location.href="./test.html";
 
 }
+
+
 
 

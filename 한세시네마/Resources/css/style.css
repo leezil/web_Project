@@ -44,6 +44,7 @@
 }
 
 .carousel-fade .carousel-item.active {
+    
     opacity: 1;
     filter: blur(0); /* 활성 슬라이드는 선명하게 보이도록 */
 }
@@ -70,3 +71,15 @@
   .carousel {
     width: 100%;
   } */
+
+  html {
+
+    -webkit-text-size-adjust: 100%;
+
+  }
+
+  a {
+
+    -webkit-text-size-adjust: 100%;
+
+  }
