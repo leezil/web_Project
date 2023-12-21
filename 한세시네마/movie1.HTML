@@ -12,7 +12,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
-<form action="./bookInfo.html">
+<form method="get" action="./bookInfo.html">
 
 <body style="background-color: #BDBDBD;">
   <div style="margin: auto; width: 60%; background-color: lightgray;">
@@ -82,7 +82,7 @@
                 <th>08:40-10:30</th>
                 <th>12:10-14:00</th>
                 <tr>
-                <td><input type="radio" name="time" value="04:30-06:20" checked></input></td>
+                <td><input type="radio" name="time" value="04:30-06:20"></input></td>
                 <td><input type="radio" name="time" value="08:40-10:30"></input></td>
                 <td><input type="radio" name="time" value="12:10-14:00"></input></td>
                 </tr>
@@ -170,7 +170,7 @@
         color: white;
         background: black;" 
         
-        onclick="alertMSG()">
+        onclick="return alertMSG();">
 
     </div>
 

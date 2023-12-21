@@ -98,19 +98,27 @@ function writeSession(){
 
 function alertMSG() {
 
-  alert("작동 잘됨");
 
-  var seat = document.getElementsByName('seat');
-        if(seat.value == "") {
-            alert("좌석을 선택해 주세요.");
-            return false;
-        }else {
+  if (!$("input:radio[Name='time']").is(":checked")){ 
+    alert("시간을 선택해주세요");
 
- alert("예매가 완료되었습니다.");
- 
+    return false;
+
+} else if (!$("input:checked[Name='seat']").is(":checked")){ 
+    alert("좌석을 선택해주세요");
+
+    return false;
+
+
+}else{
+
+  alert("예매가 완료되었습니다.");
+  return true;
+  
 }
 
 }
+
 
 function moojyogunLogOut() {
 
@@ -120,6 +128,14 @@ function moojyogunLogOut() {
 
 }
 
+function ticket(length) {
 
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    for( var i=0; i < length; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    return text;
+
+}
 
 

@@ -162,12 +162,47 @@ document.write(time);
 document.write(seat);
 </script>
 
+<br>
+티켓번호 : 
+
+<script>
+
+var text = "";
+   
+var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+for( var i=0; i < 4; i++, text = "" ) {
+
+for( var j=0; j < 4; j++ ) {
+
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+}
+
+if(i != 3) {
+
+document.write(text+"-");
+
+}else {
+
+document.write(text);
+
+}
+
+}
+
+     
+</script>
+
+
 </div>
 
 
 </body>
 
-<footer style="height: 50px; background-color: lightgray; margin: auto; width: 60%; margin-top: 5%;">
+<footer style="height: 50px; background-color: lightgray; margin: auto; width: 60%; margin-top: 3%;">
 </footer>
+
+<script src="./Resources/js/Main_Event.js"></script>
 
 </html>
