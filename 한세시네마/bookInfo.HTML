@@ -19,7 +19,7 @@
     var params;
     var seat = [];
 
-    //받아오는 파라미터 정보 : serialNo=1 & date=2023-12-08 & time=16:00-18:00 & seat=B3 & seat=C3 (예시)
+    //받아오는 파라미터 정보 : serialNo=1 & date=2023-12-08 & time=16:00-18:00 & seat=B3 & seat=C3 (예)
 
     //?뒤에 파라미터가 들어가기 떄문에 ?뒤부터 잘라서 가져오기 
     //문자를 쉽게 자르기 위해 원하는 데이터로부터 끝까지 가져온다
@@ -43,7 +43,7 @@
     //param4 좌석 자르기 (복수선택)
     param4 = param4.split("&seat=");
     
-    //좌석은 여러개이기때문에 분리해서 배열로 담기
+    //좌석은 여러개이기때문에 분리해서 다시 seat에 배열로 담기
     for (let i = 0; i < param4.length; i++) {
     
     seat[i] = param4[i];
@@ -57,7 +57,7 @@
     <div style="margin: auto; width: 60%; background-color: lightgray;">
         <div class="container-fluid">
             <header class="d-flex justify-content-between py-3 mb-4 border-bottom">
-                <a href="./test.HTML" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <a href="./test2.HTML" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <svg class="bi me-2" width="10" height="32">
                         <use xlink:href="#bootstrap"></use>
                     </svg>
@@ -65,7 +65,7 @@
                 </a>
     
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="#" id="loginBtn" class="nav-link" aria-current="page" onclick="handleButtonClick('1', this)">로그인</a></li>
+                    <li class="nav-item"><a href="#" id="logoutBtn" class="nav-link" onclick="moojyogunLogOut()">로그아웃</a></li>
                     <li class="nav-item"><a href="#" id="registerBtn" class="nav-link" onclick="handleButtonClick('2', this)">회원가입</a></li>
                     <li class="nav-item"><a href="#" id="reserveBtn" class="nav-link" onclick="handleButtonClick('3', this)">영화예매</a></li>
                 </ul>
@@ -104,6 +104,12 @@
 
 <br>
 <br>
+사용자 : 
+<script>
+document.write('admin');
+</script>
+
+<br>
 <br>
 
 영화명 : 
@@ -126,7 +132,6 @@
     
 </script>
     
-
 <br>
 날짜 : 
 
