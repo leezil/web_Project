@@ -11,7 +11,7 @@
 
 <form action="./bookInfo.HTML">
 
-<body style="background-color: #BDBDBD;">
+<body>
   <div style="margin: auto; width: 60%; background-color: lightgray;">
     <div class="container-fluid">
         <header class="d-flex justify-content-between py-3 mb-4 border-bottom">
@@ -37,15 +37,16 @@
       <h4 id="scrollspyHeading1" style="text-align: center;">영화 예매</h4>
       <p>    <div class="container-fluid">
         <div class="row">
+
           <div class="col">
-            <!-- 세 번째 이미지 -->
-            <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+            <!-- 두 번째 이미지 -->
+            <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
 
                 <div class="carousel-item2" style="text-align: center;">
-                  <img src="./Resources/img/설국열차.jpg" class="d-block w-100" alt="Third Slide" onclick="handleButtonClick('6', this)" style="cursor: pointer;">
-                  <a style="font-size: x-large;">영화명 : 설국열차</a>
-                  <input type="hidden" name="serialNo" value="3">
+                  <img src="./Resources/img/겨울왕국.png" class="d-block w-100" alt="Second Slide" onclick="handleButtonClick('5', this)" style="cursor: pointer;">
+                  <a style="font-size: x-large;">영화명 : 겨울왕국</a>
+                  <input type="hidden" name="serialNo" value="2">
                 </div>
 
               </div>
@@ -148,19 +149,19 @@
 
     <div style="margin: auto; width: 60%; text-align: center; margin-top: 5%;">
 
-      <input type="submit" value="예매하기"
-      
-      style= "width: 200px;
-      height: 50px;
-      border: 0;
-      outline: none;
-      border-radius: 0px;
-      color: white;
-      background: black;" 
-      
-      onclick="alertMSG()">
+        <input type="submit" value="예매하기"
+        
+        style= "width: 200px;
+        height: 50px;
+        border: 0;
+        outline: none;
+        border-radius: 0px;
+        color: white;
+        background: black;" 
+        
+        onclick="alertMSG()">
 
-  </div>
+    </div>
 
     <script src="./Resources/js/Main_Event.js"></script>
     
